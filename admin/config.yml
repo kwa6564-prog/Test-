@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+
+collections:
+  - name: "seiten"
+    label: "Seiteninhalte"
+    files:
+      - name: "startseite"
+        label: "Startseite"
+        file: "content/startseite.json"
+        fields:
+          - {label: "Überschrift", name: "titel", widget: "string"}
+          - {label: "Beschreibungstext", name: "text", widget: "text"}
+          - {label: "Hero-Bild", name: "bild", widget: "image"}  
